@@ -12,7 +12,7 @@
                 android:layout_height="wrap_content">
             <ImageView
                     android:layout_width="216dp"
-                    android:layout_height="216dp" app:srcCompat="@mipmap/ic_launcher_foreground_rollo"
+                    android:layout_height="216dp" app:srcCompat="@drawable/rollo"
                     android:id="@+id/imageView4"
                     android:layout_marginTop="60dp"
                     app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
@@ -42,7 +42,7 @@
                     app:layout_constraintBottom_toTopOf="@+id/imageButton3"/>
             <ImageButton
                     android:layout_width="106dp"
-                    android:layout_height="106dp" app:srcCompat="@mipmap/ic_launcher_foreground_bjorn"
+                    android:layout_height="106dp" app:srcCompat="@drawable/bjorn"
                     android:id="@+id/imageButton3"
                     android:layout_marginTop="60dp"
                     app:layout_constraintTop_toBottomOf="@+id/bioDeRollo" app:layout_constraintEnd_toEndOf="parent"
