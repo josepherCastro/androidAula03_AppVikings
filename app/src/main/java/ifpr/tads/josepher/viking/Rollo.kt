@@ -1,7 +1,9 @@
 package ifpr.tads.josepher.viking
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import kotlinx.android.synthetic.main.activity_bjorn_ironside.*
 import kotlinx.android.synthetic.main.activity_rollo.*
 
 class Rollo : AppCompatActivity() {
@@ -9,6 +11,8 @@ class Rollo : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_rollo)
+
+        paraaBjorn.setOnClickListener { bioDeBjorn() }
 
         bioDeRollo.text = "Rolão, Rolo ou Rolfo (em nórdico antigo: Hrólfr; " +
                 "em norueguês: Rolf; em latim: Rollon; em latim: Rollo/Rolphus; " +
@@ -19,5 +23,9 @@ class Rollo : AppCompatActivity() {
                 "Existem controvérsias entre os historiadores quanto à posição de Rolão no feudo da Normandia - " +
                 "se era a de um duque ou equivalente à de um conde carolíngio. Era o tataravô de Guilherme, o Conquistador, " +
                 "o primeiro rei normando da Inglaterra."
+    }
+    private fun bioDeBjorn(){
+        val intent = Intent(this, BjornIronside()::class.java)
+        startActivity(intent)
     }
 }

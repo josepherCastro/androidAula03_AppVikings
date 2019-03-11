@@ -39,11 +39,11 @@
                     app:layout_constraintStart_toStartOf="parent"
                     android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
                     android:textStyle="bold" android:textSize="18sp" android:layout_marginBottom="20dp"
-                    app:layout_constraintBottom_toTopOf="@+id/imageButton3"/>
+                    app:layout_constraintBottom_toTopOf="@+id/paraaBjorn"/>
             <ImageButton
                     android:layout_width="106dp"
                     android:layout_height="106dp" app:srcCompat="@drawable/bjorn"
-                    android:id="@+id/imageButton3"
+                    android:id="@+id/paraaBjorn"
                     android:layout_marginTop="60dp"
                     app:layout_constraintTop_toBottomOf="@+id/bioDeRollo" app:layout_constraintEnd_toEndOf="parent"
                     android:layout_marginEnd="8dp" android:layout_marginRight="8dp"

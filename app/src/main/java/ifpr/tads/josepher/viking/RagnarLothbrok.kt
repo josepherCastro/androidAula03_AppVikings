@@ -1,7 +1,9 @@
 package ifpr.tads.josepher.viking
 
+import android.content.Intent
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.AppCompatActivity
+import kotlinx.android.synthetic.main.activity_floki.*
 
 import kotlinx.android.synthetic.main.activity_ragnar_lothbrok.*
 
@@ -10,6 +12,10 @@ class RagnarLothbrok : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ragnar_lothbrok)
+
+        paraaLagertha.setOnClickListener { bioDeLagertha() }
+        paraaBjorn.setOnClickListener { bioDeBjorn() }
+        paraFloki.setOnClickListener { bioDeFloki() }
 
 
         bioDeRagnar.text = "Ragnar Lodbrok ou Ragnar Calças Peludas (em dinamarquês: Regnar Lodbrog; em sueco: Ragnar Lodbrok; " +
@@ -25,6 +31,18 @@ class RagnarLothbrok : AppCompatActivity() {
                 "Tanto Saxão quanto a saga islandesa Saga de Ragnar Lodbrok descrevem Ragnar como filho do igualmente lendário Sigurdo, " +
                 "o Anel, um rei da Suécia que teria conquistado a Dinamarca. Todavia, " +
                 "os cronistas não concordam com o local de residência principal de Ragnar, se a Suécia ou a Dinamarca."
+    }
+    private fun bioDeLagertha(){
+        val intent = Intent(this,Lagertha::class.java)
+        startActivity(intent)
+    }
+    private fun bioDeBjorn(){
+        val intent = Intent(this,BjornIronside::class.java)
+        startActivity(intent)
+    }
+    private fun bioDeFloki(){
+        val intent = Intent(this,Floki::class.java)
+        startActivity(intent)
     }
 
 }

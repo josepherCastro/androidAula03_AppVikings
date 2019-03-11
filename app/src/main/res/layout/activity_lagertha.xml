@@ -12,6 +12,14 @@
                 android:layout_height="wrap_content">
 
 
+            <ImageView
+                    android:layout_width="216dp"
+                    android:layout_height="216dp" app:srcCompat="@drawable/lagertha"
+                    android:id="@+id/imageView3" android:layout_marginTop="60dp"
+                    app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"/>
             <TextView
                     android:text="TextView"
                     android:layout_width="342dp"
@@ -32,26 +40,18 @@
                     app:layout_constraintStart_toStartOf="parent"
                     android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
                     android:textStyle="bold" android:textSize="18sp" android:layout_marginBottom="8dp"
-                    app:layout_constraintBottom_toTopOf="@+id/imageButton"/>
-            <ImageView
-                    android:layout_width="216dp"
-                    android:layout_height="216dp" app:srcCompat="@drawable/lagertha"
-                    android:id="@+id/imageView3" android:layout_marginTop="60dp"
-                    app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
-                    android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
-                    app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
-                    android:layout_marginStart="8dp"/>
+                    app:layout_constraintBottom_toTopOf="@+id/paraBjorn"/>
             <ImageButton
                     android:layout_width="106dp"
                     android:layout_height="106dp" app:srcCompat="@drawable/bjorn"
-                    android:id="@+id/imageButton" android:layout_marginTop="60dp"
+                    android:id="@+id/paraBjorn" android:layout_marginTop="60dp"
                     app:layout_constraintTop_toBottomOf="@+id/bioDeLagertha"
                     app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="50dp"
                     android:layout_marginStart="50dp"/>
             <ImageButton
                     android:layout_width="106dp"
                     android:layout_height="106dp" app:srcCompat="@drawable/ragnar"
-                    android:id="@+id/imageButton2" app:layout_constraintEnd_toEndOf="parent"
+                    android:id="@+id/paraRagnar" app:layout_constraintEnd_toEndOf="parent"
                     android:layout_marginEnd="50dp" android:layout_marginRight="50dp" android:layout_marginTop="60dp"
                     app:layout_constraintTop_toBottomOf="@+id/bioDeLagertha"/>
         </android.support.constraint.ConstraintLayout>
